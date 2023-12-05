@@ -22,10 +22,21 @@ const Card = ({ name, img, statistics }) => {
   ) : (
     <div className="card toogleCard" onClick={handleChangeImg}>
       <ul>
+        <h5
+          style={{
+            fontSize: "2rem",
+            marginBottom: ".8rem",
+            color: "black",
+          }}
+        >
+          {name}
+        </h5>
         {statistics.map((item, i) => (
-          <li style={{ listStyleType: "none" }} key={i}>
-            🏀 {item}
-          </li>
+          <>
+            <li style={{ listStyleType: "none" }} key={i}>
+              🏀 {item}
+            </li>
+          </>
         ))}
       </ul>
     </div>
