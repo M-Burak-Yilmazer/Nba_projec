@@ -1,19 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Graduate&display=swap");
 .header {
-    text-align: center;
-    padding:1rem;
-    img{
-        width:200px;
-        margin:1rem;
-    }
-    h1{
-        font-size: 3rem;
-        margin:1rem;
-    }
-    input{
-        width:80%;
-        border:none;
-        height:40px;
-        border-radius:10px;
-        padding:0 1rem;
-    }
+  text-align: center;
+  padding: 1rem;
+  font-family: "Graduate", serif;
+  img {
+    width: 200px;
+    margin: 1rem;
+  }
+  h1 {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  input {
+    width: 80%;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 1rem;
+  }
 }

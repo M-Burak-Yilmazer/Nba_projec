@@ -1,30 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400&display=swap");
+
 .cardContainer {
+  font-family: "Exo", sans-serif;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background: hsla(42, 93%, 57%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(42, 93%, 57%, 1) 0%,
+    hsla(358, 78%, 62%, 1) 100%
+  );
+
   padding: 1rem;
+
   border-radius: 10px;
   .card {
+    cursor: pointer;
     width: 250px;
     height: 300px;
+    p {
+      text-align: center;
+      color: black;
+      font-weight: 700;
+      width: 100%;
+      background-color: bisque;
+      
+      animation: filter 1s infinite alternate;
+
+      padding: 0.1rem 0.5rem;
+      border-radius: 10px;
+    }
     img {
       width: 100%;
       height: 250px;
-      transition: all .7s ease;
-      &:hover{
+      transition: all 0.7s ease;
+      &:hover {
         transform: scale(0.9);
       }
     }
   }
 }
-.toogleCard{
-    ul{
-    margin-top:3rem;
-    li{
-        margin-bottom:.5rem;
-    };
+.toogleCard {
+  background-color: #32c4c0;
+  color: white;
+  ul {
+    margin-top: 3rem;
+    li {
+      margin-bottom: 0.5rem;
+      animation: filter 1s infinite alternate;
+    }
+  }
 }
+
+@keyframes filter {
+  0% {
+    text-shadow: 5px 5px 5px yellow;
+    transform: scale(1.1)
+  }
+  100% {
+    text-shadow: 5px 5px 5px red;
+    transform: scale(1)
+  }
 }
